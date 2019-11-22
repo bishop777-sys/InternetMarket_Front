@@ -1,4 +1,5 @@
-import React, {Component} from 'react'
+import React, {Component, Fragment} from 'react'
+
 import './header.css';
 
 class Header extends Component{
@@ -9,6 +10,7 @@ class Header extends Component{
 
     render(){
         return(
+
             <div className="header_main">
                 <div className="header_content">
                     <div className="block1">При заказе от 100 рублей!</div>
@@ -18,6 +20,7 @@ class Header extends Component{
                     <div className="block3">Подробнее!</div>
                 </div>
             </div>
+   
         )
     }
 }

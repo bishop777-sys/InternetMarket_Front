@@ -1,0 +1,43 @@
+.bottom{
+    height: 55px;
+    background-color: silver;
+}
+
+.phone{
+    float: left;
+}
+.mainMenu{
+    float: right;
+}
+.mainMenu ul{
+    list-style-type: none;
+}
+.mainMenu li {
+    float:left;
+    padding-right: 25px;
+    text-transform: uppercase;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.mainMenu li:last-child {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.phone{
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.phone a{
+    display: block;
+}
+
+.bottom_body{
+    width: 1001px;
+    margin: 0 auto;
+}

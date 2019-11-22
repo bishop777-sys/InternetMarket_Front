@@ -1,4 +1,5 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
+import HeaderBottom from '../HeaderBottom/HeaderBottom.jsx'
 import './Header.css'
 
 class HeaderBar extends Component{
@@ -9,27 +10,30 @@ class HeaderBar extends Component{
 
     render() {
         return (
-            <div className="float_header">
-                <div className="left">
-                    <a href="/" className="logo"/>
+            <Fragment>
+                <div className="float_header">
+                    <div className="left">
+                        <a href="/" className="logo"/>
+                    </div>
+                    <div className="right">
+                        <div>
+                            <input type="text" />
+                            <button>Search</button>
+                        </div>
+                        <div>
+                            User room
+                        </div>
+                        <div>
+                            Geolocation
+                        </div>
+                        <div>
+                            BAG
+                        </div>
+                    </div>
+                    
                 </div>
-                <div className="right">
-                    <div>
-                        <input type="text" />
-                        <button>Search</button>
-                    </div>
-                    <div>
-                        User room
-                    </div>
-                    <div>
-                        Geolocation
-                    </div>
-                    <div>
-                        BAG
-                    </div>
-                </div>
-                
-            </div>
+                <HeaderBottom />
+            </Fragment>
         )
     }
 
