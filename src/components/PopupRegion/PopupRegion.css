@@ -1,0 +1,53 @@
+button.region_aggre{
+    background-color: #f3e785;
+    border-width: 0px;
+    width:65px;
+    height: 26px;
+    font-size: 18px;
+    transition: background-color 0.3s linear;
+}
+.region_popup_box{
+    width: 200px;
+    height: 88px;
+    border: pink 1px solid;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, .3)
+}
+.arrow_block{
+    width:15px;
+    height: 15px;
+    border-style: solid;
+    border-color: pink;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 0;
+    border-right-width: 0;
+    transform: rotate(134deg);
+    position: relative;
+    top: -8.3px;
+    left: 90px;
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+button.region_aggre:hover{
+    background-color: #d1c355;
+}
+.buttons {
+    padding: 0 30px 0 30px;
+}
+.btn_yes{
+    float: left;
+}
+
+.btn_no{
+    float: right;
+}
+
+.region_popup {
+    position: relative;
+    top: -15px;
+}
+
+.region_popup p{
+    text-align: center;
+}
