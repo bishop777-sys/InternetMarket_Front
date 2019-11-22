@@ -17,3 +17,4 @@ export default class Motivators extends Component{
         )
     }
 }
+
