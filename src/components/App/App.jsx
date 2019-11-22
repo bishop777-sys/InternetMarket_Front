@@ -1,13 +1,26 @@
 import React, { Component } from 'react'
 import PopupRegion from '../PopupRegion/PopupRegion.jsx'
+import Header from '../Header/Header.jsx'
+import HeaderBar from '../HeaderBar/HeaderBar.jsx'
 import './App.css'
 
 class App extends Component {
+    constructor(props){
+        super(props);
+
+        this.state = {
+            show: false
+        }
+    }
     render() {
         return (
             <div>
-                <h1>My React App!</h1>
-                <PopupRegion />
+                <Header />
+                <HeaderBar />
+
+                {this.state.show  &&
+                    <PopupRegion />
+                }
             </div>
         );
     }

@@ -8,7 +8,7 @@ class PopupRegion extends Component{
         this.state = {
             cityName: ""
         }
-        this.showPosition = this.showPosition.bind(this);
+
     }
     async componentDidMount(){
         //navigator.geolocation.getCurrentPosition(this.showPosition)
@@ -18,11 +18,6 @@ class PopupRegion extends Component{
             cityName : json.city
         })
     }
-    showPosition(position){
-        console.log(position.coords.latitude);
-        console.log(position.coords.longitude);
-    }
-
 
     render(){
         return(
