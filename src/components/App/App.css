@@ -1,5 +1,8 @@
-
-h1 {
-    color: #27aedb;
-    text-align: center;
+html, body, #header {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.body{
+    width: 1001px;
+    margin: 0 auto;
 }

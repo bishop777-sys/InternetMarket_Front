@@ -1,0 +1,32 @@
+.header_main{
+    background-color: tomato;
+    height: 20px;
+    padding: 5px;
+    /*position: fixed;*/
+    width: 100%;
+}
+.header_content{
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.block1{
+    display: inline-block;
+    color: yellow;
+}
+
+.block2{
+    display: inline-block;
+    font-style: italic;
+    color: #ffffff;
+}
+
+.block3{
+    display: inline-block;
+    color: yellow;
+}
+
+.next_block{
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+}

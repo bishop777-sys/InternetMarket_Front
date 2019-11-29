@@ -9,14 +9,14 @@ button.region_aggre{
 .region_popup_box{
     width: 200px;
     height: 88px;
-    border: pink 1px solid;
+    border: tomato 1px solid;
     box-shadow: 0 6px 8px rgba(0, 0, 0, .3)
 }
 .arrow_block{
     width:15px;
     height: 15px;
     border-style: solid;
-    border-color: pink;
+    border-color: tomato;
     border-left-width: 1px;
     border-bottom-width: 1px;
     border-top-width: 0;

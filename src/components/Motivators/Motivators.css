@@ -1,0 +1,20 @@
+.motivators{
+    height: 28px;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 18px 0;
+    width:100%;
+    text-align:center;
+}
+
+.motivator_price{
+    float: left;
+}
+
+.motivator_dilevery{
+    display: inline-block;
+    margin:0 auto;
+    width:100px;
+}
+.motivator_payment{
+    float: right;
+}

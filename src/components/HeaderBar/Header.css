@@ -1,0 +1,24 @@
+.left{
+    float: left;
+}
+.right{
+    float: left;
+    margin-left: 58px;
+}
+.logo{
+    width: 200px;
+    height:  50px;
+    background-image: url("../img/shopLogo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+}
+
+.right div{
+    float: left;
+}
+.float_header{
+    margin: 0 auto;
+    width: 1001px;
+    height: 100px;
+}
