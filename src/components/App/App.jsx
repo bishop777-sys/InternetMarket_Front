@@ -9,6 +9,7 @@ import Motivators from '../Motivators/Motivators.jsx'
 import ErrorBoundry from '../error-boundry/error-boundry.jsx'
 
 import './App.css'
+import CardItem from '../CardItem/CardItem.jsx';
 
 class App extends Component {
     constructor(props){
@@ -35,6 +36,9 @@ class App extends Component {
                                 </Route>
                                 <Route path="/users">
                                     <PersonalArea />
+                                </Route>
+                                <Route path="/card/:id" component={CardItem}>
+                                 
                                 </Route>
                             </Switch>
                         </Router>

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './PersonalArea.css';
+import ApiService from '../../services/api-service.js'
 
 class PersonalArea extends Component{
     constructor(props){
@@ -8,11 +9,12 @@ class PersonalArea extends Component{
         this.state = {
             name: "",
             description: "",
-            price: 0
+            price: ''
         }
 
         this.changeName = this.changeName.bind(this);
         this.saveOnServer = this.saveOnServer.bind(this);
+        this.swapiService = new ApiService();
     }
 
     changeName(e){
@@ -28,15 +30,16 @@ class PersonalArea extends Component{
             description: this.state.description,
             price: Number(this.state.price)
         };
-        console.log(Product);   
-        let json = await fetch('https://localhost:44385/api/product/add', {
-            method: 'POST',
-            headers: {
-                "Content-Type": "application/json",
-                "Accept": "application/json"
-            },
-            body: JSON.stringify(Product)
-        });
+        let result = await this.swapiService.createItem(Product, 'api/product/add');
+        if(result.status){
+            this.setState({
+                name: '',
+                description: '',
+                price: ''
+            })
+            alert('This is OK!');
+
+        }
         
         /*if (json.ok) { // если HTTP-статус в диапазоне 200-299
             // получаем тело ответа (см. про этот метод ниже)
