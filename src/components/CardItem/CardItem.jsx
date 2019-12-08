@@ -53,7 +53,7 @@ class CardItem extends Component{
                     Price
                 </p>
                 <p>
-                    {this.state.price} рублей
+                    {this.state.price}
                 </p>
             </div>
         )
