@@ -1,0 +1,17 @@
+.div_lc div{
+    display: flex;
+    align-items: center;
+}
+.div_lc input{
+    height: 25px;
+}
+.div_lc p{
+    width: 130px;
+}
+.div_lc input{
+    width: 250px;
+}
+.div_lc button{
+    width: 120px;
+    height: 30px;
+}
