@@ -1,47 +1,47 @@
 {
-    "name": "internetmarket",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "start": "webpack-dev-server --mode development --hot",
-        "startOpen": "webpack-dev-server --mode development --open --hot",
-        "build": "webpack --mode production",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/bishop777-sys/InternetMarketFront.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/bishop777-sys/InternetMarketFront/issues"
-    },
-    "homepage": "https://github.com/bishop777-sys/InternetMarketFront#readme",
-    "devDependencies": {
-        "@babel/core": "^7.7.2",
-        "@babel/plugin-proposal-class-properties": "^7.7.4",
-        "@babel/plugin-transform-runtime": "^7.6.2",
-        "@babel/preset-env": "^7.7.1",
-        "@babel/preset-react": "^7.7.0",
-        "@babel/runtime": "^7.7.2",
-        "babel-loader": "^8.0.6",
-        "css-loader": "^3.2.0",
-        "file-loader": "^4.3.0",
-        "html-webpack-plugin": "^3.2.0",
-        "style-loader": "^1.0.0",
-        "url-loader": "^2.3.0",
-        "webpack": "^4.41.2",
-        "webpack-cli": "^3.3.10",
-        "webpack-dev-server": "^3.9.0"
-    },
-    "dependencies": {
-        "prop-types": "^15.7.2",
-        "react": "^16.12.0",
-        "react-dom": "^16.12.0",
-        "react-redux": "^7.1.3",
-        "react-router-dom": "^5.1.2",
-        "redux": "^4.0.4"
-    }
+  "name": "internetmarket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --hot",
+    "startOpen": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bishop777-sys/InternetMarketFront.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bishop777-sys/InternetMarketFront/issues"
+  },
+  "homepage": "https://github.com/bishop777-sys/InternetMarketFront#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "@babel/runtime": "^7.7.2",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.3.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.0.0",
+    "url-loader": "^2.3.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.1.3",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.4"
+  }
 }
