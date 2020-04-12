@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import PersonalArea from '../PersonalArea/PersonalArea.jsx';
 import PopupRegion from '../PopupRegion/PopupRegion.jsx'
 import Header from '../Header/Header.jsx'
-import HeaderBar from '../HeaderBar/HeaderBar.jsx'
+import IconBreadcrumbs from '../BreadCrumbs/BreadCrumbs.jsx'
 import Motivators from '../Motivators/Motivators.jsx'
 import ErrorBoundry from '../error-boundry/error-boundry.jsx'
 
@@ -24,7 +24,7 @@ class App extends Component {
             <ErrorBoundry>
                 <Fragment>
                     <Header />
-                    <HeaderBar />
+                    <IconBreadcrumbs />
                     <div className="body">
                         <Router>
                             <Switch>
@@ -37,8 +37,8 @@ class App extends Component {
                                 <Route path="/users">
                                     <PersonalArea />
                                 </Route>
-                                <Route path="/card/:id" component={CardItem}>
-                                 
+                                <Route path="/card/:id">
+                                    <CardItem />
                                 </Route>
                             </Switch>
                         </Router>
