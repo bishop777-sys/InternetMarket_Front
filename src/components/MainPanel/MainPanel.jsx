@@ -87,15 +87,7 @@ function ResponsiveDrawer(props) {
 
         ))}
       </List>
-      <Divider />
-      <List>
-        {dataArray.map((item) => (
-          <ListItem component={Link} to={"/product/" + item.id} button  key={item.id}>
-            
-            <ListItemText primary={item.name} />
-          </ListItem>
-        ))}
-      </List>
+
     </div>
   );
 
