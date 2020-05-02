@@ -16,8 +16,6 @@ import Paper from '@material-ui/core/Paper';
 import Checkbox from '@material-ui/core/Checkbox';
 import IconButton from '@material-ui/core/IconButton';
 import Tooltip from '@material-ui/core/Tooltip';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Switch from '@material-ui/core/Switch';
 import DeleteIcon from '@material-ui/icons/Delete';
 import FilterListIcon from '@material-ui/icons/FilterList';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -302,8 +300,8 @@ export default function ProductList() {
   const emptyRows = rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
 
   return (
-    <div className={classes.root}>
-      <Paper className={classes.paper}>
+    
+      <Paper className={classes.paper} >
         <EnhancedTableToolbar numSelected={selected.length} />
         <TableContainer>
           <Table
@@ -379,6 +377,6 @@ export default function ProductList() {
           onChangeRowsPerPage={handleChangeRowsPerPage}
         />
       </Paper>
-    </div>
+
   );
 }

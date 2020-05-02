@@ -15,7 +15,11 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(0.5),
     width: 20,
     height: 20,
+
   },
+  bread:{
+    marginLeft: theme.spacing(150),
+  }
 }));
 
 function handleClick(event) {
@@ -27,7 +31,7 @@ export default function IconBreadcrumbs() {
   const classes = useStyles();
 
   return (
-    <Breadcrumbs aria-label="breadcrumb">
+    <Breadcrumbs aria-label="breadcrumb" className={classes.bread}>
       <Link color="inherit" href="/" onClick={handleClick} className={classes.link}>
         <HomeIcon className={classes.icon} />
         Главная
