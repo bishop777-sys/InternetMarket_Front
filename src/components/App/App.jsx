@@ -20,23 +20,21 @@ class App extends Component {
     }
     render() {
         return (
-            <ErrorBoundry>
-                <Fragment>
-                    <Header />
-                    <Container>
-                        <ResponsiveDrawer>
-                            <Router>
+            <Router>
+                <ErrorBoundry>
+                    <Fragment>
+                        <Header />
+                        <Container>
+                            <ResponsiveDrawer>
                                 <Switch>
                                     <Route exact path="/" component={HomePage} />
-                                    <Route exact path="/product" component={ProductList} />
+                                    <Route exact path="/product/:id" component={ProductList} />
                                 </Switch>
-                                
-
-                            </Router>
-                        </ResponsiveDrawer>
-                    </Container>
-                </Fragment>
-            </ErrorBoundry>
+                            </ResponsiveDrawer>
+                        </Container>
+                    </Fragment>
+                </ErrorBoundry>
+            </Router>
         );
     }
 }

@@ -174,7 +174,7 @@ const useToolbarStyles = makeStyles((theme) => ({
 
 const EnhancedTableToolbar = (props) => {
   const classes = useToolbarStyles();
-  const { numSelected } = props;
+  const { numSelected, id } = props;
 
   return (
     <Toolbar
@@ -188,7 +188,7 @@ const EnhancedTableToolbar = (props) => {
         </Typography>
       ) : (
         <Typography className={classes.title} variant="h6" id="tableTitle" component="div">
-          Nutrition
+          Nutrition {id}
         </Typography>
       )}
 
@@ -237,7 +237,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ProductList() {
+export default function ProductList(props) {
+  const {id} = props.match.params;
   const classes = useStyles();
   const [order, setOrder] = React.useState('asc');
   const [orderBy, setOrderBy] = React.useState('calories');
@@ -300,9 +301,9 @@ export default function ProductList() {
   const emptyRows = rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
 
   return (
-    
+ 
       <Paper className={classes.paper} >
-        <EnhancedTableToolbar numSelected={selected.length} />
+        <EnhancedTableToolbar numSelected={selected.length} id={id} />
         <TableContainer>
           <Table
             className={classes.table}
@@ -318,6 +319,7 @@ export default function ProductList() {
               onSelectAllClick={handleSelectAllClick}
               onRequestSort={handleRequestSort}
               rowCount={rows.length}
+          
             />
             <TableBody>
               {stableSort(rows, getComparator(order, orderBy))
